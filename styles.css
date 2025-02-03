@@ -1,0 +1,299 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('background-transparent.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('background-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 10px;
+    text-align: center;
+    position: relative;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* القائمة الرئيسية */
+nav {
+    background-color: #4b0082;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 5px solid 	#254117; /* حدود مميزة أسفل الشريط */
+ border-top: 5px solid 	#254117; /* حدود مميزة أسفل الشريط */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظلال لإبراز الشريط */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #6a0dad; /* لون عند التحويم */
+    color: white;
+    transform: scale(1.1); /* تكبير الزر قليلاً عند التحويم */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* ظلال عند التحويم */
+}
+
+/* القسم الرئيسي */
+main {
+    padding: 20px;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.9); /* خلفية شفافة */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.section h2 {
+    color: #4b0082;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/*مساحة اعلانية مض*/
+
+#hero {
+   background-color: #004080;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* قسم طلاب الأوائل */
+.students-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background-color: #f9f9f9;
+    border: 2px solid #6a0dad;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.student-card:hover {
+    transform: scale(1.05);
+}
+
+.student-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    border: 3px solid #4b0082;
+}
+
+.student-info h3 {
+    font-size: 1.2rem;
+    color: #4b0082;
+    margin-bottom: 5px;
+}
+
+.student-info p {
+    color: #555;
+    font-size: 0.9rem;
+}
+/* كروت التخصصات */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #6a0dad;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 0.9rem;
+}
+/* قسم طلاب الأوائل */
+
+
+
+
+/* شريط التواصل */
+.contact-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-bar img {
+    width: 30px;
+    height: auto;
+    filter: invert(1);
+}
+
+.footer-text {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-text .artistic-touch {
+    color: #ff6f61;
+    font-style: italic;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ad-content {
+        flex-direction: column;
+    }
+
+    .ad-content img {
+        width: 100%;
+    }
+}

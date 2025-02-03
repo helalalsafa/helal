@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كلية الشفاء</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Tahoma', Geneva, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container::before {
+            content: "";
+            background: url('path_to_college_image.png') no-repeat center center;
+            background-size: cover;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+            border-radius: 15px;
+        }
+
+        .header-content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header-content img.logo {
+            width: 100px;
+            height: auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: #004080;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card-content h3 {
+            margin: 15px 0;
+            color: #004080;
+        }
+
+        .card-content p {
+            margin: 15px 0;
+        }
+
+        .study-plan {
+            display: none;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .study-plan.active {
+            display: block;
+        }
+
+        .study-plan h4 {
+            color: #004080;
+            margin-top: 0;
+        }
+
+        .study-plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .study-plan li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .event {
+            display: flex;
+            align-items: center;
+        }
+
+        .event img {
+            width: 50%;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+       
+
+        footer {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-bar a {
+            margin: 0 10px;
+        }
+
+        .contact-bar img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="header-content">
+            <img src="image/logo.jpg" alt="شعار الكلية" class="logo">
+            <h1>كلية الشفاء للعلوم الطبية والتقنية</h1>
+            <p>التميز في التعليم والبحث العلمي</p>
+        </div>
+    </header>
+
+    <!-- القائمة الرئيسية -->
+    <nav>
+        <a href="#about">من نحن</a>
+        <a href="#programs">برامجنا</a>
+        <a href="#events">فعالياتنا</a>
+        <a href="#top-students">طلاب الأوائل</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <main class="container">
+        <!-- عن الكلية -->
+        <section class="section" id="about">
+<div class="hero-text">
+                <h2>من نحن</h2>
+                <p>كلية الشفاء هي مؤسسة تعليمية رائدة تهدف إلى تقديم تعليم عالي الجودة وإعداد قادة المستقبل ،كن من قادة المستقبل.!</p>
+              <!--  <a href="www.google.com" class="btn">سجل الآن</a>-->
+            </div>
+            <!--<h2>من نحن</h2>
+            <p>كلية الشفاء هي مؤسسة تعليمية رائدة تهدف إلى تقديم تعليم عالي الجودة وإعداد قادة المستقبل ،كن من قادة المستقبل.</p>-->
+        </section>
+<!--مساحة اعلانية -->
+<section id="hero">
+        <div class="hero-content">
+ <div class="hero-text">
+                <h2>فرصتك للتميز</h2>
+                <p>انضم إلى برامجنا المتميزة واستعد لمستقبل مشرق ،ابدا رحلة التعلم معنا!</p>
+              <!--  <a href="www.google.com" class="btn">سجل الآن</a>-->
+            </div>
+            <img src="image\ad-banner.jpg" alt="صورة إعلانية" class="hero-image">
+           
+        </div>
+    </section>
+
+
+        
+
+        <!-- كروت التخصصات -->
+        <section id="programs" class="section">
+            <h2>تخصصاتنا الأكاديمية</h2>
+            <div class="cards">
+                <div class="card" onclick="togglePlan('medicine')">
+                    <img src="image\engineering.jpg" alt="هندسة">
+                    <div class="card-content">
+                        <h3>مختبرات</h3>
+                        <p>برنامج متكامل لمدة 3 سنوات </p>
+                        <div id="medicine-plan" class="study-plan">
+                            <h4>الخطة الدراسية:</h4>
+                            <ul>
+                                <li>السنة الأولى: العلوم الأساسية والتشريح</li>
+                                <li>السنة الثانية: الفيزيولوجيا والكيمياء الحيوية</li>
+                                <li>السنة الثالثة: الأمراض والصيدلة</li>
+                                <li>السنة الرابعة: الطب الباطني والجراحة</li>
+                                <li>السنة الخامسة: التخصصات السريرية</li>
+                                <li>السنة السادسة: الامتياز والتدريب العملي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image\tahder.jpg" alt="هندسة">
+                    <div class="card-content">
+                        <h3>تخدير</h3>
+                        <p>تخصص ............</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="image\mad.jpg" alt="إدارة أعمال">
+                    <div class="card-content">
+                        <h3>تمريض</h3>
+                        <p>برنامج يهدف إلى ت...........</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="medicine.jpg" alt="طب">
+                    <div class="card-content">
+                        <h3>الطب العام</h3>
+                        <p>تخصص يقدم تعليمًا شاملًا في مجال الطب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الفعاليات -->
+        <section class="section" id="events">
+            <h2>فعالياتنا القادمة</h2>
+            <div class="event">
+                <img src="event-image.jpg" alt="فعالية">
+                <p>مؤتمر دولي حول الذكاء الاصطناعي يوم 15 نوفمبر 2023.</p>
+            </div>
+        </section>
+
+ <!-- قسم طلاب الأوائل -->
+        <section class="section" id="top-students">
+            <h2>طلاب الأوائل</h2>
+            <div class="students-grid">
+                <div class="student-card">
+                    <img src="student1.jpg" alt="طالب أول">
+                    <div class="student-info">
+                        <h3>أحمد محمد</h3>
+                        <p>المركز الأول - هندسة البرمجيات</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="student2.jpg" alt="طالب ثاني">
+                    <div class="student-info">
+                        <h3>سارة علي</h3>
+                        <p>المركز الثاني - إدارة الأعمال</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <img src="student3.jpg" alt="طالب ثالث">
+                    <div class="student-info">
+                        <h3>محمد خالد</h3>
+                        <p>المركز الثالث - الطب العام</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التواصل -->
+        <section class="section" id="contact">
+            <h2>تواصل معنا</h2>
+            <div class="contact-info">
+                <p><strong>البريد الإلكتروني:</strong> hilal.2025@gmail.com</p>
+                <p><strong>رقم الهاتف:</strong> +77777777</p>
+                <p><strong>الموقع:</strong> الحديدة، شارع صنعاء</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- شريط التواصل -->
+    <footer>
+        <div class="contact-bar">
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="فيسبوك"></a>
+            <a href="mailto:hilal.2025@gmail.com"><img src="email-icon.png" alt="البريد الإلكتروني"></a>
+            <a href="tel:+77777777"><img src="phone-icon.png" alt="رقم الهاتف"></a>
+        </div>
+        <div class="footer-text">
+            <p>&copy; جميع الحقوق محفوظة لدى ALSAFA_SOFT-2025 <span class="artistic-touch">❤️</span></p>
+        </div>
+    </footer>
+
+    <script>
+        function togglePlan(planId) {
+            const plan = document.getElementById(`${planId}-plan`);
+            const allPlans = document.querySelectorAll('.study-plan');
+           
+            // إغلاق جميع الخطط المفتوحة
+            allPlans.forEach(p => {
+                if(p.id !== `${planId}-plan`) p.classList.remove('active');
+            });
+           
+            // تبديل حالة الخطة المحددة
+            plan.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
