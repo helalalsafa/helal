@@ -40,35 +40,7 @@
             border-radius: 15px;
         }
 
-        .header-content {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .header-content img.logo {
-            width: 100px;
-            height: auto;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-            background-color: #004080;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
+      
  
         .study-plan {
             display: none;
@@ -136,23 +108,23 @@
 </head>
 <body>
 
-    <!-- الهيدر -->
-    <header>
+    <header class="fade-in">
         <div class="header-content">
             <img src="image/logo.jpg" alt="شعار الكلية" class="logo">
             <h1>كلية الشفاء للعلوم الطبية والتقنية</h1>
-            <p>التميز في التعليم والبحث العلمي</p>
+            <p>الريادة في التعليم الطبي والتقني</p>
         </div>
     </header>
 
-    <!-- القائمة الرئيسية -->
     <nav>
-        <a href="#about">من نحن</a>
-        <a href="#programs">برامجنا</a>
-        <a href="#events">فعالياتنا</a>
-        <a href="#top-students">طلاب الأوائل</a>
-        <a href="#contact">تواصل معنا</a>
+        <div class="nav-container">
+            <a href="#about">من نحن</a>
+            <a href="#programs">البرامج</a>
+            <a href="#students">طلاب الأوائل</a>
+            <a href="#contact">التواصل</a>
+        </div>
     </nav>
+
 
     <!-- القسم الرئيسي -->
     <main class="container">
@@ -170,7 +142,7 @@
 <section id="hero">
         <div class="hero-content">
  <div class="hero-text">
-                <h2>فرصتك للتميز</h2>
+                <h2>فرصتك للتميز(مساحة اعلانية لنص وصورة )</h2>
                 <p>انضم إلى برامجنا المتميزة واستعد لمستقبل مشرق ،ابدا رحلة التعلم معنا!</p>
               <!--  <a href="www.google.com" class="btn">سجل الآن</a>-->
             </div>
@@ -233,8 +205,8 @@
         <section class="section" id="events">
             <h2>فعالياتنا القادمة</h2>
             <div class="event">
-                <img src="event-image.jpg" alt="فعالية">
-                <p>مؤتمر دولي حول الذكاء الاصطناعي يوم 15 نوفمبر 2023.</p>
+                <img src="imag\event-image.jpg" alt="فعالية">
+                <p>مؤتمر لليوم العالمي للصيدلة </p>
             </div>
         </section>
 
