@@ -5,70 +5,105 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
-
+/*صورة خلفية كل لاصفحة*/
 body {
     background: url('background-transparent.png') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     line-height: 1.6;
 }
+----
+/* الهيدر */
+       
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border: 3px solid white;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+       
+
+        /* القائمة */
+      
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+حجم وتحكم الشريط
+      
+
+        nav a:hover, nav a.active {
+            background: #6a0dad;
+            border-color: white;
+            transform: translateY(-2px);
+        }
+
 
 /* الهيدر */
+/*صورة الراس*/
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('background-header.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 40px 10px;
-    text-align: center;
-    position: relative;
-}
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background-header.jpg');
+            background-size: cover;
+            background-position: center;
+height: 400px;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
 
 header .header-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+مكان تحكم بالصورة بالهدر
+---
 
-header img.logo {
-    width: 120px;
-    height: auto;
-    margin-bottom: 15px;
-    border: 3px solid white;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #e0e0e0;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* القائمة الرئيسية */
 nav {
-    background-color: #4b0082;
-    padding: 10px;
+    background-color: #002080;/*الشريط العلوي*/
+    padding: 5px;
     text-align: center;
-    border-bottom: 5px solid 	#254117; /* حدود مميزة أسفل الشريط */
- border-top: 5px solid 	#254117; /* حدود مميزة أسفل الشريط */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظلال لإبراز الشريط */
+    border-bottom: 3px solid 	#254117; /* حدود مميزة أسفل الشريط */
+ border-top: 3px solid 	#254117; /* حدود مميزة أسفل الشريط */
+    box-shadow: 10 4px 6px rgba(0, 0, 0, 0.1); /* ظلال لإبراز الشريط */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1rem;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: all 0.3s ease;
 }
 
@@ -103,7 +138,7 @@ main {
 /*مساحة اعلانية مض*/
 
 #hero {
-   background-color: #004080;
+   background-color: #004080;/*مكان الصورة*/
             color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -210,7 +245,7 @@ main {
     width: 300px;
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease;
-   position: relative;
+    position: relative;
 }
 
 .card:hover {
@@ -246,7 +281,7 @@ main {
 
 /* شريط التواصل */
 .contact-bar {
-    background-color: #333;
+    background-color: #333;/*مكان الفيسبوك وغيرة*/
     color: white;
     text-align: center;
     padding: 10px;
@@ -272,25 +307,64 @@ main {
     color: #ff6f61;
     font-style: italic;
 }
+/* تحسينات اللمس */
+        @media (hover: none) {
+            .card:hover, nav a:hover {
+                transform: none;
+            }
+        }
+
+        /* الرسوم المتحركة */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
 
 /* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
+ header {
+        height: 300px; /* تقليل ارتفاع الهيدر للشاشات الصغيرة */
+
+    }
+
+    header h1 {
+        font-size: 2em; /* تقليل حجم العنوان */
+    }
+
+    header p {
+        font-size: 1.2em; /* تقليل حجم النص */
+    }
+
+  
+
+
+    .hero-content h2 {
+        font-size: 1.5em; /* تقليل حجم العنوان */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* تقليل حجم النص */
+    }
     header h1 {
         font-size: 1.8rem;
     }
 
     nav a {
         display: block;
-        margin: 10px 0;
+        margin: -1px 0;
     }
 
     .cards {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row-reverse;
+        align-items: normal;
     }
 
     .ad-content {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .ad-content img {
