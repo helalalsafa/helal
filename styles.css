@@ -210,6 +210,40 @@ main {
     transform: scale(1.05);
 }
 
+
+.contact-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link i {
+    margin-left: 8px; /* فصل النص عن الأيقونة */
+    font-size: 20px;
+}
+
+.contact-link:hover {
+    background-color: #34495e;
+    transform: scale(1.1);
+}
+
 .student-card img {
     width: 100px;
     height: 100px;
@@ -229,6 +263,13 @@ main {
     color: #555;
     font-size: 0.9rem;
 }
+
+.custom-image {
+            width: 1000px; /* العرض */
+            height: 500px; /* الارتفاع */
+            object-fit: cover; /* للحفاظ على نسبة العرض والارتفاع دون تشويه */
+            border-radius: 10px; /* لإضافة تأثير دائري للأركان */
+        }
 /* كروت التخصصات */
 .cards {
     display: flex;
