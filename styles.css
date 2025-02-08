@@ -12,7 +12,31 @@ body {
     color: #333;
     line-height: 1.6;
 }
-----
+
+
+/* .icon {
+            font-size: 40px;
+            color: #1877F2; /* لون Facebook الرسمي */
+        }
+*/
+ .contact-link.facebook i {
+            color: #1877F2; /* لون فيسبوك */
+        }
+
+        .contact-link.whatsapp i {
+            color: #25D366; /* لون الواتساب */
+        }
+
+        .contact-link.phone i {
+            color: #FFC107; /* لون الهاتف (ذهبي) */
+        }
+
+        .contact-link.email i {
+            color: #BB001B; /* لون البريد الإلكتروني (أحمر Gmail) */
+        }
+ 
+
+
 /* الهيدر */
        
 
@@ -372,9 +396,33 @@ main {
 
     }
 
+  .custom-image {
+                width: 90%; /* يجعل الصورة تستجيب لعرض الشاشة الصغيرة */
+            }
+
+
     header h1 {
         font-size: 2em; /* تقليل حجم العنوان */
     }
+ .contact-bar {
+                flex-direction: column; /* ترتيب الأيقونات بشكل عمودي */
+            }
+
+            .contact-link {
+                font-size: 16px;
+                margin: 5px 0;
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+            }
+
+/*.contact-link {
+
+font-size: 0.5em; /* تقليل حجم خط التواصل */
+  */
+
+  }*/
+
 
     header p {
         font-size: 1.2em; /* تقليل حجم النص */
@@ -403,6 +451,7 @@ main {
         flex-direction: row-reverse;
         align-items: normal;
     }
+
 
     .ad-content {
         flex-direction: row;
