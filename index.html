@@ -105,7 +105,7 @@
             margin-top: 70px;
             padding: 30px;
             transition: var(--transition-speed);
-            /* إضافة هامش سفلي لتجنب تغطية المحتوى بالفوتر الثابت */
+            /* إضافة هامش سفلي لتجنب تغطية المحتوى بالفوتر */
             margin-bottom: 100px;
         }
         .interface {
@@ -205,16 +205,14 @@
             background-color: yellow;
             color: black;
         }
-        /* تنسيق الفوتر لجعله ثابتاً دائماً في الأسفل مع تصغير حجمه */
+        /* تنسيق الفوتر مع إلغاء التثبيت وتصغير الحجم */
         footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
+            position: static;
             width: 100%;
             background: #571B7E;
             color: white;
-            padding: 2px 10px;
-            z-index: 1001;
+            padding: 10px 10px;
+            text-align: center;
         }
         footer .contact-bar {
             display: flex;
@@ -231,6 +229,13 @@
             text-align: center;
             margin-top: 5px;
             font-size: 0.9rem;
+        }
+        /* تحسين استجابة الفوتر على الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            footer {
+                padding: 5px 10px;
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -301,7 +306,6 @@
                         <p data-key="nursingDescription">برنامج يهدف إلى ت...........</p>
                     </div>
                 </div>
-
             </div>
         </div>
         <div id="departments" class="interface" data-search="الأقسام الأكاديمية">
@@ -494,7 +498,7 @@
             </div>
         </div>
     </main>
-    <!-- الفوتر الثابت دائمًا -->
+    <!-- الفوتر -->
     <footer>
         <div class="contact-bar">
             <a href="tel:+96733777844" class="contact-link phone">
