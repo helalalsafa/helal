@@ -141,7 +141,7 @@ main {
 /*مساحة اعلانية مض*/
 
 #hero {
-   background-color: #004080;/*مكان الصورة*/
+   background-color: #f2f2f2;/*مكان الصورة*/
             color: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -172,7 +172,8 @@ main {
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+color: #000000;
     margin-bottom: 20px;
 }
 
@@ -309,6 +310,11 @@ main {
 }
 
 .card-content h3 {
+    font-size: 1.6rem;
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+.card-conte h3 {
     font-size: 1.2rem;
     color: #4b0082;
     margin-bottom: 10px;
